@@ -84,7 +84,7 @@ We welcome community contributions! Feel free to:
 - Update benchmarks or hardware support
 - Submit PRs for engine usage examples or tutorials
 
-## Contributing
+## Citation
 ```
 ```
 
