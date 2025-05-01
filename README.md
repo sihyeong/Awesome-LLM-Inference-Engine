@@ -42,7 +42,34 @@ We classify LLM inference engines along the following dimensions:
 
 ## Open Source Inference Engines
 
-## Commercial Solutions
+- [Ollama](https://github.com/ollama/ollama) ([Webpage](https://ollama.com/))
+- [llama.cpp](https://github.com/ggml-org/llama.cpp)
+- [MAX](https://github.com/modular/modular) ([Webpage](https://www.modular.com/max/solutions/ai-inference))
+- [MLC LLM](https://github.com/mlc-ai/mlc-llm) ([Webpage](https://llm.mlc.ai/))
+- [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer) ([Paper](https://arxiv.org/abs/2312.12456), [Paper](https://arxiv.org/abs/2406.06282))
+- [TGI (Text Generation Inference)](https://github.com/huggingface/text-generation-inference) ([Webpage](https://huggingface.co/docs/text-generation-inference/index))
+- [Unsloth](https://github.com/unslothai/unsloth) ([Webpage](https://unsloth.ai/))
+- [llama2.c](https://github.com/karpathy/llama2.c)
+- [bitnet.cpp](https://github.com/microsoft/BitNet)
+- [OpenLLM](https://github.com/bentoml/OpenLLM) ([Webpage](https://www.bentoml.com/))
+- [LightLLM](https://github.com/ModelTC/lightllm) ([Webpage](https://www.light-ai.top/lightllm-blog/blog/))
+- [NanoFlow](https://github.com/efeslab/Nanoflow) ([Paper](https://arxiv.org/abs/2408.12757))
+- [vAttention](https://github.com/microsoft/vattention) ([Paper](https://arxiv.org/abs/2405.04437))
+- [Sarathi-Serve](https://github.com/microsoft/sarathi-serve) ([Paper](https://arxiv.org/abs/2403.02310))
+- [vLLM](https://github.com/vllm-project/vllm) ([Webpage](https://docs.vllm.ai/en/latest/)) ([Paper](https://arxiv.org/abs/2309.06180))
+- [DeepSpeed-FastGen](https://github.com/deepspeedai/DeepSpeed/tree/master/blogs/deepspeed-fastgen)  ([Webpage](https://www.deepspeed.ai/)) ([Paper](https://arxiv.org/abs/2401.08671))
+- [SGLang](https://github.com/sgl-project/sglang) ([Webpage](https://docs.sglang.ai//)) ([arXiv](https://arxiv.org/abs/2312.07104))
+- [LitGPT](https://github.com/Lightning-AI/litgpt) ([Webpage](https://lightning.ai/))
+- [LMDeploy](https://github.com/InternLM/lmdeploy) ([Webpage](https://lmdeploy.readthedocs.io/en/latest/))
+- [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) ([Webpage](https://docs.nvidia.com/tensorrt-llm/index.html))
+- [DistServe](https://github.com/LLMServe/DistServe) ([Paper](https://arxiv.org/abs/2401.09670))
+
+## Commercial Inference Engines
+
+- [Together Inference](https://www.together.ai/)
+- [GroqCloud](https://groq.com/groqcloud/)
+- [Fireworks AI](https://fireworks.ai/)
+- [Friendli Inference](https://friendli.ai/)
 
 ## Optimization Techniques
 
