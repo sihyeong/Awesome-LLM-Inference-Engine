@@ -264,7 +264,16 @@ The following table compares 25 open-source and commercial LLM inference engines
 | GroqCloud         | ❌     | ❌      | ❌     | ✅      | ❌     | ❌                   | ❌                 | ❌                  | ❌               | ❌          | ❌            | ❌           | ❌             | ❌             | ❌                                        | Groq LPU               |
 | Together Inference| ❌     | ❌      | ❌     | ✅      | ❌     | ❌                   | ✅                 | ❌                  | ❌               | ❌          | ❌            | ❌           | ❌             | ❌             | ❌                                        | ❌                      |
 
-
+- **NVIDIA GPU**: [NVIDIA A100](https://www.nvidia.com/en-us/data-center/a100/), [NVIDIA H100](https://www.nvidia.com/en-us/data-center/h100/?ncid=no-ncid), [NVIDIA H200](https://www.nvidia.com/en-us/data-center/h200/?ncid=no-ncid) etc.
+- **AMD GPU**: [AMD Radeon](https://www.amd.com/en/products/graphics/desktops/radeon.html), etc.
+- **Intel GPU**: [Intel Arc](https://www.intel.com/content/www/us/en/products/details/discrete-gpus/arc.html), etc.
+- **Google TPU**: [TPU v4](https://cloud.google.com/tpu/docs/v4), [TPU v5e](https://cloud.google.com/tpu/docs/v5e), [TPU v5p](https://cloud.google.com/tpu/docs/v5p), etc.
+- **AMD Instinct**: [Instinct MI200](https://www.amd.com/en/products/accelerators/instinct/mi200.html), [Instinct MI300X](https://www.amd.com/en/products/accelerators/instinct/mi300/mi300x.html), etc.
+- **Intel Gaudi**: [Intel Gaudi 2](https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi2.html), Intel [Gaudi 3](https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html)
+- **Huawei Ascend**: [Ascend series](https://e.huawei.com/ph/products/computing/ascend)
+- **AWS Inferentia**: [Inferentia](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/arch/neuron-hardware/inferentia.html), [Inferentia 2](https://awsdocs-neuron.readthedocs-hosted.com/en/latest/general/arch/neuron-hardware/inferentia2.html)
+- **Mobile/Edge**: [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/), [Qualcomm Snapdragon](https://www.qualcomm.com/snapdragon/overview), etc.
+- **ETC**: [Moore Threads MTT](https://en.mthreads.com/), [Tecorigin SDAA](http://www.tecorigin.com/), [Groq LPU](https://groq.com/the-groq-lpu-explained/)
 
 ## 🔭 Future Directions
 
