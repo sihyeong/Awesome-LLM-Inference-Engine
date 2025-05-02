@@ -196,7 +196,7 @@ We classify LLM inference optimization techniques into several major categories 
 | StructTest / SoEval       | Tools for structured output validation | [Chen et al. (2024)](https://arxiv.org/abs/2412.18011), [Liu et al. (2024)](https://doi.org/10.1016/j.ipm.2024.103809)                          |
 
 
-## 🧮 Comparison Table
+## 📚 Comparison Table
 
 ⚠️ Due to GitHub Markdown limitations, only a summarized Markdown version is available here. Please refer to the LaTeX version in the survey paper for full detail.
 
@@ -319,6 +319,36 @@ The following table compares 25 open-source and commercial LLM inference engines
 | Fireworks AI           | -                | ✅                   | -              | -                | -                | -    | -                   | -                      | ✅           | ✅      | ✅       | ✅   | ✅             | -              | ✅         | -              | ❌          | -              | -              | ❌             | ✅             | ✅                     | ✅               |
 | GroqCloud              | -                | -                    | -              | -                | ✅               | -    | ✅                  | ✅                     | ✅           | ✅      | ✅       | -    | -              | -              | -          | -              | ❌          | -              | -              | ❌             | ✅             | ✅                     | ✅               |
 | Together Inference     | -                | -                    | -              | -                | -                | ✅   | -                   | -                      | ✅           | -       | ✅       | ✅   | ✅             | -              | -          | -              | ❌          | ✅             | -              | ❌             | ✅             | ✅                     | ✅               |
+
+### 🧮 Numeric Precision Support Matrix
+
+| Framework           | FP32 | FP16 | FP8  | FP4  | NF4  | BF16 | INT8 | INT4 | MXFP8 | MXFP6 | MXFP4 | MXINT8 |
+|---------------------|------|------|------|------|------|------|------|------|--------|--------|--------|---------|
+| Ollama              | ✅   | ✅   | ✅   | ❌   | ❌   | ✅   | ✅   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| LLaMA.cpp           | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| vLLM                | ✅   | ✅   | ✅   | ✅   | ✅   | ✅   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| DeepSpeed-FastGen   | ✅   | ✅   | ❌   | ✅   | ❌   | ❌   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| unsloth             | ✅   | ✅   | ✅   | ❌   | ✅   | ✅   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| MAX                 | ✅   | ✅   | ✅   | ❌   | ❌   | ✅   | ✅   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| MLC-LLM             | ✅   | ✅   | ✅   | ❌   | ❌   | ❌   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| llama2.c            | ✅   | ❌   | ❌   | ❌   | ❌   | ❌   | ✅   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| bitnet.cpp          | ✅   | ✅   | ❌   | ❌   | ❌   | ✅   | ✅   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| SGLang              | ✅   | ✅   | ✅   | ✅   | ✅   | ✅   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| LitGPT              | ✅   | ✅   | ❌   | ✅   | ✅   | ❌   | ✅   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| OpenLLM             | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ✅   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| TensorRT-LLM        | ✅   | ✅   | ✅   | ✅   | ❌   | ✅   | ✅   | ✅   | ✅     | ❌     | ✅     | ❌      |
+| TGI                 | ✅   | ✅   | ✅   | ✅   | ✅   | ✅   | ❌   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| PowerInfer          | ✅   | ✅   | ❌   | ❌   | ❌   | ✅   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| LMDeploy            | ✅   | ✅   | ✅   | ❌   | ❌   | ✅   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| LightLLM            | ✅   | ✅   | ❌   | ❌   | ❌   | ✅   | ✅   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| NanoFlow            | ❌   | ✅   | ❌   | ❌   | ❌   | ✅   | ❌   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| DistServe           | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ❌   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| vAttention          | ✅   | ✅   | ✅   | ❌   | ❌   | ✅   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| Sarathi-Serve       | ✅   | ✅   | ❌   | ❌   | ❌   | ✅   | ❌   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| Friendli Inference  | ✅   | ✅   | ✅   | ❌   | ❌   | ✅   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
+| Fireworks AI        | ❌   | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| GroqCloud           | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ✅   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| Together Inference  | ❌   | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ✅   | ❌     | ❌     | ❌     | ❌      |
 
 
 ### 🧭 Radar Chart: Multi-Dimensional Evaluation of LLM Inference Engines
