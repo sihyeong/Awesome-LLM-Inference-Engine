@@ -8,8 +8,8 @@ Our work is based on the following paper:
 
 ## 🗂 Table of Contents
 
-- [🧠 Overview](#overview)
-- [📊 Taxonomy](#taxonomy)
+- [🧠 Overview](#-overview)
+- [📊 Taxonomy](#-taxonomy)
 - [🔓 Open Source Inference Engines](#open-source-inference-engines)
 - [💼 Commercial Solutions](#commercial-solutions)
 - [🛠 Optimization Techniques](#optimization-techniques)
