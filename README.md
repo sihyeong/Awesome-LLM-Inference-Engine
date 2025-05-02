@@ -235,7 +235,7 @@ The following table compares 25 open-source and commercial LLM inference engines
 - Docs: ✅ = detailed, 🟠 = moderate, 🟡 = simple, ❌ = missing
 - SNS / Forum / Meetup: presence of Discord/Slack, forum, or events
 
-### Hardware Support Matrix
+### 💻 Hardware Support Matrix
 | Framework         | Linux | Windows | macOS | Web/API | x86-64 | ARM64/Apple Silicon | NVIDIA GPU (CUDA) | AMD GPU (ROCm/HIP) | Intel GPU (SYCL) | Google TPU | AMD Instinct | Intel Gaudi | Huawei Ascend | AWS Inferentia | Mobile / Edge                            | ETC                   |
 |-------------------|--------|---------|--------|---------|--------|----------------------|--------------------|---------------------|------------------|-------------|---------------|--------------|----------------|----------------|------------------------------------------|------------------------|
 | Ollama            | ✅     | ✅      | ✅     | ❌      | ✅     | ✅                   | ✅                 | ✅                  | ✅               | ❌          | ✅            | ❌           | ❌             | ❌             | ✅ (NVIDIA Jetson)                         | ❌                      |
