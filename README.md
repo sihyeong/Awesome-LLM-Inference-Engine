@@ -277,7 +277,7 @@ The following table compares 25 open-source and commercial LLM inference engines
 - **Mobile/Edge**: [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/), [Qualcomm Snapdragon](https://www.qualcomm.com/snapdragon/overview), etc.
 - **ETC**: [Moore Threads MTT](https://en.mthreads.com/), [Tecorigin SDAA](http://www.tecorigin.com/), [Groq LPU](https://groq.com/the-groq-lpu-explained/)
 
-## 🧭 Deployment Scalability vs. Hardware Diversity
+### 🧭 Deployment Scalability vs. Hardware Diversity
 
 |                        | 🧩 Heterogeneous Devices                                                                                                  | ⚙️ Homogeneous Devices                                                                                                   |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
