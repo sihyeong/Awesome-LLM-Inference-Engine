@@ -307,6 +307,12 @@ The following table compares 25 open-source and commercial LLM inference engines
 | AMD MI300X | - | 4.99 | - | - |
 | Groq LPU | - | - | - | - |
 
+### 🧭 Radar Chart: Multi-Dimensional Evaluation of LLM Inference Engines
+
+This radar chart compares 25 inference engines across six key dimensions: general-purpose support, ease of use, ease of deployment, latency awareness, throughput awareness, and scalability.
+
+![Six-Dimension Evaluation](assets/six_dimension_graph.png)
+
 
 ## 🔭 Future Directions
 
