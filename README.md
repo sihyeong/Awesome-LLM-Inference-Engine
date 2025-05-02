@@ -275,11 +275,11 @@ The following table compares 25 open-source and commercial LLM inference engines
 - **Mobile/Edge**: [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/), [Qualcomm Snapdragon](https://www.qualcomm.com/snapdragon/overview), etc.
 - **ETC**: [Moore Threads MTT](https://en.mthreads.com/), [Tecorigin SDAA](http://www.tecorigin.com/), [Groq LPU](https://groq.com/the-groq-lpu-explained/)
 
-### 📈 Comercial Inference Engine Performance Comparison
+### 📈 Commercial Inference Engine Performance Comparison
 ![Inference Throughput and Latency](assets/inference_throughput_latency.png)
 - Source: [Artificial Analysis](https://artificialanalysis.ai/)
 
-### 💲 Coomercial Inference Engine Pricing by Model (USD per 1M tokens)
+### 💲 Commercial Inference Engine Pricing by Model (USD per 1M tokens)
 
 | Model | Friendli AI† | Fireworks AI | GroqCloud | Together AI‡ |
 |-------|--------------|--------------|-----------|---------------|
@@ -296,7 +296,7 @@ The following table compares 25 open-source and commercial LLM inference engines
 - ‡ Turbo mode price   
 - * DeepSeek-R1 Distill Llama 70B
 
-### 💲 Coomercial Inference Engine Pricing by Hardware Type (USD per hour per device)
+### 💲 Commercial Inference Engine Pricing by Hardware Type (USD per hour per device)
 
 | Hardware | Friendli AI | Fireworks AI | GroqCloud | Together AI |
 |----------|-------------|--------------|-----------|---------------|
