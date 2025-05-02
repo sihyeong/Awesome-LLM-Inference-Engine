@@ -275,6 +275,38 @@ The following table compares 25 open-source and commercial LLM inference engines
 - **Mobile/Edge**: [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/), [Qualcomm Snapdragon](https://www.qualcomm.com/snapdragon/overview), etc.
 - **ETC**: [Moore Threads MTT](https://en.mthreads.com/), [Tecorigin SDAA](http://www.tecorigin.com/), [Groq LPU](https://groq.com/the-groq-lpu-explained/)
 
+### 📈 Comercial Inference Engine Performance Comparison
+![Inference Throughput and Latency](assets/inference_throughput_latency.png)
+- Source: [Artificial Analysis](https://artificialanalysis.ai/)
+
+### 💲 Coomercial Inference Engine Pricing by Model (USD per 1M tokens)
+
+| Model | Friendli AI† | Fireworks AI | GroqCloud | Together AI‡ |
+|-------|--------------|--------------|-----------|---------------|
+| DeepSeek-R1 | 3.00 / 7.00 | 3.00 / 8.00 | 0.75* / 0.99* | 3.00 / 7.00 |
+| DeepSeek-V3 | - / - | 0.90 / 0.90 | - / - | 1.25 / 1.25 |
+| Llama 3.3 70B | 0.60 / 0.60 | - / - | 0.59 / 0.79 | 0.88 / 0.88 |
+| Llama 3.1 405B | - / - | 3.00 / 3.00 | - / - | 3.50 / 3.50 |
+| Llama 3.1 70B | 0.60 / 0.60 | - / - | - / - | 0.88 / 0.88 |
+| Llama 3.1 8B | 0.10 / 0.10 | - / - | 0.05 / 0.08 | 0.18 / 0.18 |
+| Qwen 2.5 Coder 32B | - / - | - / - | 0.79 / 0.79 | 0.80 / 0.80 |
+| Qwen QwQ Preview 32B | - / - | - / - | 0.29 / 0.39 | 1.20 / 1.20 |
+
+- † Llama is Instruct model 
+- ‡ Turbo mode price   
+- * DeepSeek-R1 Distill Llama 70B
+
+### 💲 Coomercial Inference Engine Pricing by Hardware Type (USD per hour per device)
+
+| Hardware | Friendli AI | Fireworks AI | GroqCloud | Together AI |
+|----------|-------------|--------------|-----------|---------------|
+| NVIDIA A100 80GB | 2.9 | 2.9 | - | 2.56 |
+| NVIDIA H100 80GB | 5.6 | 5.8 | - | 3.36 |
+| NVIDIA H200 141GB | - | 9.99 | - | 4.99 |
+| AMD MI300X | - | 4.99 | - | - |
+| Groq LPU | - | - | - | - |
+
+
 ## 🔭 Future Directions
 
 Recent advancements in LLM inference engines reveal several open challenges and research opportunities:
