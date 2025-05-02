@@ -6,21 +6,22 @@ A curated list of LLM inference engines, system architectures, and optimization 
 Our work is based on the following paper:
 **Survey on Inference Engines for Large Language Models: Perspectives on Optimization and Efficiency**
 
-## Table of Contents
+## 🗂 Table of Contents
 
-- [Overview](#overview)
-- [Taxonomy](#taxonomy)
-- [Open Source Inference Engines](#open-source-inference-engines)
-- [Commercial Solutions](#commercial-solutions)
-- [Optimization Techniques](#optimization-techniques)
-- [Comparison Table](#comparison-table)
-- [Future Directions](#future-directions)
-- [Contributing](#contributing)
-- [License](#license)
+- [🧠 Overview](#overview)
+- [📊 Taxonomy](#taxonomy)
+- [🔓 Open Source Inference Engines](#open-source-inference-engines)
+- [💼 Commercial Solutions](#commercial-solutions)
+- [🛠 Optimization Techniques](#optimization-techniques)
+- [🧮 Comparison Table](#comparison-table)
+- [🔭 Future Directions](#future-directions)
+- [🤝 Contributing](#contributing)
+- [📝 Citation](#citation)
+- [⚖️License](#license)
 
 ---
 
-## Overview
+## 🧠 Overview
 
 LLM services are evolving rapidly to support complex tasks such as chain-of-thought (CoT), reasoning, AI Agent workflows. These workloads significantly increase inference cost and system complexity.
 
@@ -29,7 +30,7 @@ This repository categorizes and compares LLM inference engines by:
 - 🖧 **Deployment type** (single-node vs multi-node)
 - ⚙️ **Hardware diversity** (homogeneous vs heterogeneous)
 
-## Taxonomy
+## 📊 Taxonomy
 
 We classify LLM inference engines along the following dimensions:
 
@@ -40,7 +41,7 @@ We classify LLM inference engines along the following dimensions:
 - 📈 **Throughput-aware:** Captures the presence of optimization techniques focused on maximizing throughput, such as continuous batching, parallelism, and cache reuse.
 - ⚡ **Latency-aware:** Captures support for techniques targeting low latency, including stall-free scheduling, chunked prefill, and priority-aware execution.
 
-## Open Source Inference Engines
+## 🔓 Open Source Inference Engines
 
 - [Ollama](https://github.com/ollama/ollama) 🌐 [Webpage](https://ollama.com/)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
@@ -64,14 +65,14 @@ We classify LLM inference engines along the following dimensions:
 - [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) 🌐 [Webpage](https://docs.nvidia.com/tensorrt-llm/index.html)
 - [DistServe](https://github.com/LLMServe/DistServe) 📄 [Paper](https://arxiv.org/abs/2401.09670)
 
-## Commercial Inference Engines
+## 💼 Commercial Inference Engines
 
 - 🌐 [Together Inference](https://www.together.ai/)
 - 🌐 [GroqCloud](https://groq.com/groqcloud/)
 - 🌐 [Fireworks AI](https://fireworks.ai/)
 - 🌐 [Friendli Inference](https://friendli.ai/)
 
-## Optimization Techniques
+## 🛠 Optimization Techniques
 
 We classify LLM inference optimization techniques into several major categories based on their target performance metrics, including latency, throughput, memory, and scalability. Each category includes representative methods and corresponding research publications.
 
@@ -194,9 +195,9 @@ We classify LLM inference optimization techniques into several major categories 
 | StructTest / SoEval       | Tools for structured output validation | [Chen et al. (2024)](https://arxiv.org/abs/2412.18011), [Liu et al. (2024)](https://doi.org/10.1016/j.ipm.2024.103809)                          |
 
 
-## Comparison Table
+## 🧮 Comparison Table
 
-### Overview of LLM Inference Engines
+### 📋 Overview of LLM Inference Engines
 The following table compares 25 open-source and commercial LLM inference engines along multiple dimensions including organization, release status, GitHub trends, documentation maturity, model support, and community presence.
 
 (⚠️ Due to GitHub Markdown limitations, only a summarized Markdown version is available here. Please refer to the LaTeX version in the survey paper for full detail.)
@@ -235,9 +236,32 @@ The following table compares 25 open-source and commercial LLM inference engines
 - SNS / Forum / Meetup: presence of Discord/Slack, forum, or events
 
 
-## Future Directions
+## 🔭 Future Directions
 
-## Contributing
+Recent advancements in LLM inference engines reveal several open challenges and research opportunities:
+
+- **Multimodal Support:** As multimodal models like Qwen2-VL and LLaVA-1.5 emerge, inference engines must support efficient handling of image, audio, and video modalities. This includes multimodal preprocessing, M-RoPE position embedding, and modality-preserving quantization.
+
+- **Beyond Transformers:** Emerging architectures such as RetNet, RWKV, and Mamba challenge the dominance of Transformers. Engines must adapt to hybrid models like Jamba that mix Mamba and Transformer components, including MoE.
+
+- **Hardware-Aware Optimization:** Efficient operator fusion (e.g., FlashAttention-3) and mixed-precision kernels are needed for specialized accelerators like H100, NPUs, or PIMs. These require advanced tiling strategies and memory alignment.
+
+- **Extended Context Windows:** Models now support up to 10M tokens. This creates significant pressure on KV cache management, requiring hierarchical caching, CPU offloading, and memory-efficient attention.
+
+- **Complex Reasoning:** Support for multi-step CoT, tool usage, and multi-turn dialogs is growing. Engines must manage long token sequences and optimize session continuity and streaming outputs.
+
+- **Application-Driven Tradeoffs:** Real-time systems (e.g., chatbots) prioritize latency, while backend systems (e.g., batch translation) prioritize throughput. Engines must offer tunable optimization profiles.
+
+- **Security & Robustness:** Prompt injection, jailbreaks, and data leakage risks necessitate runtime moderation (e.g., OpenAI Moderation), input sanitization, and access control.
+
+- **On-Device Inference:** With compact models like Gemma and Phi-3, edge inference is becoming viable. This requires compression, chunk scheduling, offloading, and collaboration across devices.
+
+- **Heterogeneous Hardware:** Support for TPUs, NPUs, AMD MI300X, and custom AI chips demands hardware-aware partitioning, adaptive quantization, and load balancing.
+
+- **Cloud Orchestration:** Inference systems must integrate with serving stacks like Ray, Kubernetes, Triton, and Hugging Face Spaces to scale reliably.
+
+
+## 🤝 Contributing
 
 We welcome community contributions! Feel free to:
 
@@ -245,12 +269,12 @@ We welcome community contributions! Feel free to:
 - Update benchmarks or hardware support
 - Submit PRs for engine usage examples or tutorials
 
-## Citation
+## 📝 Citation
 
 ```
 
 ```
 
-## License
+## ⚖️ License
 
 MIT License. See `LICENSE` for details.
