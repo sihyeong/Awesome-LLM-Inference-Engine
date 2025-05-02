@@ -10,14 +10,14 @@ Our work is based on the following paper:
 
 - [🧠 Overview](#-overview)
 - [📊 Taxonomy](#-taxonomy)
-- [🔓 Open Source Inference Engines](#open-source-inference-engines)
-- [💼 Commercial Solutions](#commercial-solutions)
-- [🛠 Optimization Techniques](#optimization-techniques)
-- [🧮 Comparison Table](#comparison-table)
-- [🔭 Future Directions](#future-directions)
-- [🤝 Contributing](#contributing)
-- [📝 Citation](#citation)
-- [⚖️License](#license)
+- [🔓 Open Source Inference Engines](#-open-source-inference-engines)
+- [💼 Commercial Solutions](#-commercial-solutions)
+- [🛠 Optimization Techniques](#-optimization-techniques)
+- [🧮 Comparison Table](#-comparison-table)
+- [🔭 Future Directions](#-future-directions)
+- [🤝 Contributing](#-contributing)
+- [📝 Citation](#-citation)
+- [⚖️License](#-license)
 
 ---
 
