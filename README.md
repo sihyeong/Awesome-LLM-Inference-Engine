@@ -26,19 +26,19 @@ LLM services are evolving rapidly to support complex tasks such as chain-of-thou
 
 This repository categorizes and compares LLM inference engines by:
 
-- **Deployment type** (single-node vs multi-node)
-- **Hardware diversity** (homogeneous vs heterogeneous)
+- 🖧 **Deployment type** (single-node vs multi-node)
+- ⚙️ **Hardware diversity** (homogeneous vs heterogeneous)
 
 ## Taxonomy
 
 We classify LLM inference engines along the following dimensions:
 
-- **Ease-of-Use:** Assesses documentation quality and community activity. Higher scores indicate better developer experience and community support.
-- **Ease-of-Deployment:** Measures the simplicity and speed of installation using tools like pip, APT, Homebrew, Conda, Docker, source builds, or prebuilt binaries.
-- **General-purpose support:** Reflects the range of supported LLM models and hardware platforms. Higher values indicate broader compatibility across diverse model families and execution environments.
-- **Scalability:** Indicates the engine’s ability to operate effectively across edge devices, servers, and multi-node deployments. Higher scores denote readiness for large-scale or distributed workloads.
-- **Throughput-aware:** Captures the presence of optimization techniques focused on maximizing throughput, such as continuous batching, parallelism, and cache reuse.
-- **Latency-aware:** Captures support for techniques targeting low latency, including stall-free scheduling, chunked prefill, and priority-aware execution.
+- 🧑‍💻 **Ease-of-Use:** Assesses documentation quality and community activity. Higher scores indicate better developer experience and community support.
+- ⚙️ **Ease-of-Deployment:** Measures the simplicity and speed of installation using tools like pip, APT, Homebrew, Conda, Docker, source builds, or prebuilt binaries.
+- 🌐 **General-purpose support:** Reflects the range of supported LLM models and hardware platforms. Higher values indicate broader compatibility across diverse model families and execution environments.
+- 🏗 **Scalability:** Indicates the engine’s ability to operate effectively across edge devices, servers, and multi-node deployments. Higher scores denote readiness for large-scale or distributed workloads.
+- 📈 **Throughput-aware:** Captures the presence of optimization techniques focused on maximizing throughput, such as continuous batching, parallelism, and cache reuse.
+- ⚡ **Latency-aware:** Captures support for techniques targeting low latency, including stall-free scheduling, chunked prefill, and priority-aware execution.
 
 ## Open Source Inference Engines
 
