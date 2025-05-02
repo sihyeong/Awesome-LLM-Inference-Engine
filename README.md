@@ -240,25 +240,25 @@ The following table compares 25 open-source and commercial LLM inference engines
 
 Recent advancements in LLM inference engines reveal several open challenges and research opportunities:
 
-- **Multimodal Support:** As multimodal models like Qwen2-VL and LLaVA-1.5 emerge, inference engines must support efficient handling of image, audio, and video modalities. This includes multimodal preprocessing, M-RoPE position embedding, and modality-preserving quantization.
+- **Multimodal Support:** As multimodal models like [Qwen2-VL](https://arxiv.org/abs/2409.12191) and [LLaVA-1.5](https://openaccess.thecvf.com/content/CVPR2024/html/Liu_Improved_Baselines_with_Visual_Instruction_Tuning_CVPR_2024_paper.html) emerge, inference engines must support efficient handling of image, audio, and video modalities. This includes multimodal preprocessing, M-RoPE position embedding, and modality-preserving quantization.
 
-- **Beyond Transformers:** Emerging architectures such as RetNet, RWKV, and Mamba challenge the dominance of Transformers. Engines must adapt to hybrid models like Jamba that mix Mamba and Transformer components, including MoE.
+- **Beyond Transformers:** Emerging architectures such as [RetNet](https://arxiv.org/abs/2307.08621), [RWKV](https://arxiv.org/abs/2305.13048), and [Mamba](https://openreview.net/forum?id=tEYskw1VY2#discussion) challenge the dominance of Transformers. Engines must adapt to hybrid models like [Jamba](https://arxiv.org/abs/2403.19887) that mix Mamba and Transformer components, including MoE.
 
-- **Hardware-Aware Optimization:** Efficient operator fusion (e.g., FlashAttention-3) and mixed-precision kernels are needed for specialized accelerators like H100, NPUs, or PIMs. These require advanced tiling strategies and memory alignment.
+- **Hardware-Aware Optimization:** Efficient operator fusion (e.g., [FlashAttention-3](https://proceedings.neurips.cc/paper_files/paper/2024/hash/7ede97c3e082c6df10a8d6103a2eebd2-Abstract-Conference.html)) and mixed-precision kernels are needed for specialized accelerators like H100, NPUs, or PIMs. These require advanced tiling strategies and memory alignment.
 
 - **Extended Context Windows:** Models now support up to 10M tokens. This creates significant pressure on KV cache management, requiring hierarchical caching, CPU offloading, and memory-efficient attention.
 
-- **Complex Reasoning:** Support for multi-step CoT, tool usage, and multi-turn dialogs is growing. Engines must manage long token sequences and optimize session continuity and streaming outputs.
+- **Complex Reasoning:** Support for multi-step [CoT](https://proceedings.neurips.cc/paper_files/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html?ref=https://githubhelp.com), tool usage, and [multi-turn dialogs](https://www.usenix.org/conference/atc24/presentation/gao-bin-cost) is growing. Engines must manage long token sequences and optimize session continuity and streaming outputs.
 
 - **Application-Driven Tradeoffs:** Real-time systems (e.g., chatbots) prioritize latency, while backend systems (e.g., batch translation) prioritize throughput. Engines must offer tunable optimization profiles.
 
-- **Security & Robustness:** Prompt injection, jailbreaks, and data leakage risks necessitate runtime moderation (e.g., OpenAI Moderation), input sanitization, and access control.
+- **Security & Robustness:** Prompt injection, jailbreaks, and data leakage risks necessitate runtime moderation (e.g., [OpenAI Moderation](https://ojs.aaai.org/index.php/AAAI/article/view/26752)), input sanitization, and access control.
 
-- **On-Device Inference:** With compact models like Gemma and Phi-3, edge inference is becoming viable. This requires compression, chunk scheduling, offloading, and collaboration across devices.
+- **On-Device Inference:** With compact models like [Gemma](https://arxiv.org/abs/2403.08295) and [Phi-3](https://arxiv.org/abs/2404.14219), edge inference is becoming viable. This requires compression, chunk scheduling, offloading, and collaboration across devices.
 
 - **Heterogeneous Hardware:** Support for TPUs, NPUs, AMD MI300X, and custom AI chips demands hardware-aware partitioning, adaptive quantization, and load balancing.
 
-- **Cloud Orchestration:** Inference systems must integrate with serving stacks like Ray, Kubernetes, Triton, and Hugging Face Spaces to scale reliably.
+- **Cloud Orchestration:** Inference systems must integrate with serving stacks like [Ray](https://github.com/ray-project/ray), [Kubernetes](https://kubernetes.io/), [Triton](https://github.com/triton-inference-server/server), and [Hugging Face Spaces](https://huggingface.co/spaces) to scale reliably.
 
 
 ## 🤝 Contributing
