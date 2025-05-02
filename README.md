@@ -428,5 +428,14 @@ MIT License. See `LICENSE` for details.
 ## 📝 Citation
 
 ```
+@misc{awesome_inference_engine,
+  author       = {Sihyeong Park, Sungryeol Jeon, Chaelyn Lee, Seokhun Jeon, Byung-Soo Kim, and Jemin Lee},
+  title        = {{Awesome-LLM-Inference-Engine}},
+  howpublished = {\url{https://github.com/sihyeong/Awesome-LLM-Inference-Engine}},
+  year         = {2025}     
+}
+```
+
+```
 
 ```
