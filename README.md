@@ -276,6 +276,25 @@ The following table compares 25 open-source and commercial LLM inference engines
 - **Mobile/Edge**: [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/), [Qualcomm Snapdragon](https://www.qualcomm.com/snapdragon/overview), etc.
 - **ETC**: [Moore Threads MTT](https://en.mthreads.com/), [Tecorigin SDAA](http://www.tecorigin.com/), [Groq LPU](https://groq.com/the-groq-lpu-explained/)
 
+## 🧭 Deployment Scalability vs. Hardware Diversity
+
+|                        | 🧩 Heterogeneous Devices                                                                                                  | ⚙️ Homogeneous Devices                                                                                                   |
+|------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
+| 🖥 **Single-Node**      | llama.cpp, MAX, MLC LLM, Ollama, PowerInfer, TGI                                                                          | bitnet.cpp, LightLLM, llama2.c, NanoFlow, OpenLLM, Sarathi-Serve, Unsloth, vAttention, Friendli Inference                |
+| 🖧 **Multi-Node**       | DeepSpeed-FastGen, LitGPT, LMDeploy, SGLang, vLLM, Fireworks AI, Together Inference                                       | DistServe, TensorRT-LLM, GroqCloud                                                                                       |
+
+*Legend:*
+- **🖥 Single-Node**: Designed for single-device execution
+- **🖧 Multi-Node**: Supports distributed or multi-host serving
+- **🧩 Heterogeneous Devices**: Supports diverse hardware (CPU, GPU, accelerators)
+- **⚙️ Homogeneous Devices**: Optimized for a single hardware class
+
+### 🧭 Radar Chart: Multi-Dimensional Evaluation of LLM Inference Engines
+
+This radar chart compares 25 inference engines across six key dimensions: general-purpose support, ease of use, ease of deployment, latency awareness, throughput awareness, and scalability.
+
+![Six-Dimension Evaluation](assets/six_dimension_graph.png)
+
 ### 📈 Commercial Inference Engine Performance Comparison
 ![Inference Throughput and Latency](assets/inference_throughput_latency.png)
 - Source: [Artificial Analysis](https://artificialanalysis.ai/)
@@ -306,12 +325,6 @@ The following table compares 25 open-source and commercial LLM inference engines
 | NVIDIA H200 141GB | - | 9.99 | - | 4.99 |
 | AMD MI300X | - | 4.99 | - | - |
 | Groq LPU | - | - | - | - |
-
-### 🧭 Radar Chart: Multi-Dimensional Evaluation of LLM Inference Engines
-
-This radar chart compares 25 inference engines across six key dimensions: general-purpose support, ease of use, ease of deployment, latency awareness, throughput awareness, and scalability.
-
-![Six-Dimension Evaluation](assets/six_dimension_graph.png)
 
 
 ## 🔭 Future Directions
