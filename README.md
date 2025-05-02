@@ -374,7 +374,7 @@ This radar chart compares 25 inference engines across six key dimensions: genera
 
 - † Llama is Instruct model 
 - ‡ Turbo mode price   
-- * DeepSeek-R1 Distill Llama 70B
+- \* DeepSeek-R1 Distill Llama 70B
 
 ### 💲 Commercial Inference Engine Pricing by Hardware Type (USD per hour per device)
 
