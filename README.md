@@ -441,5 +441,10 @@ MIT License. See `LICENSE` for details.
 ```
 
 ```
-
+@article{park2025survey,
+  title={A Survey on Inference Engines for Large Language Models: Perspectives on Optimization and Efficiency},
+  author={Park, Sihyeong and Jeon, Sungryeol and Lee, Chaelyn and Jeon, Seokhun and Kim, Byung-Soo and Lee, Jemin},
+  journal={arXiv preprint arXiv:2505.01658},
+  year={2025}
+}
 ```
