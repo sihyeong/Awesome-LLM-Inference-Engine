@@ -69,6 +69,7 @@ We classify LLM inference engines along the following dimensions:
 - [Unsloth](https://github.com/unslothai/unsloth) 🌐 [Webpage](https://unsloth.ai/)
 - [vAttention](https://github.com/microsoft/vattention) 📄 [Paper](https://arxiv.org/abs/2405.04437)
 - [vLLM](https://github.com/vllm-project/vllm) 🌐 [Webpage](https://docs.vllm.ai/en/latest/) 📄 [Paper](https://arxiv.org/abs/2309.06180)
+- PrefillOnly 📄 [Paper](https://arxiv.org/abs/2505.07203)
 
 ## 💼 Commercial Inference Engines
 
