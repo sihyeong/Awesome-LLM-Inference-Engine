@@ -23,6 +23,7 @@ Our work is based on the following paper:
 - [🤝 Contributing](#contributing)
 - [⚖️ License](#license)
 - [📝 Citation](#citation)
+- [🔬 Experiments](#experiments)
 
 ---
 
@@ -391,6 +392,180 @@ This radar chart compares 25 inference engines across six key dimensions: genera
 | NVIDIA H200 141GB | - | 9.99 | - | 4.99 |
 | AMD MI300X | - | 4.99 | - | - |
 | Groq LPU | - | - | - | - |
+
+
+## 🔬 Experiments
+
+This section presents an empirical study of 21 open-source LLM inference engines across both server-class GPUs and edge devices.
+All benchmarks were executed through a unified OpenAI-compatible interface, and GuideLLM (https://github.com/vllm-project/guidellm) 
+was used to generate load, measure latency, and ensure reproducible evaluation across engines.
+
+### ⚙️ Experimental Setup
+
+**Hardware**
+- **Server A (High-End)**: 8× NVIDIA H100
+- **Server B (Mid-Range)**: 6× NVIDIA RTX A6000
+- **Edge Device**: NVIDIA Jetson Orin AGX 32GB
+
+**Engine Installation Notes**
+
+All 21 engines were installed and tested individually.
+- **Easy**: pip/uv-based engines (Ollama, LLaMA.cpp, vLLM, etc.)
+- **Medium**: container-based engines (TGI, TensorRT-LLM, MAX)
+- **Hard**: engines requiring extra build steps or patches (MLC LLM, DistServe, NanoFlow)
+
+**Model Execution Feasibility**
+
+Not all engines supported the same models across devices.
+Some engines:
+
+- ran on A6000 but not H100 (kernel/runtime mismatch)
+- failed on multinode-only configurations
+- lacked Jetson/ARM builds
+
+Only Ollama and LLaMA.cpp ran reliably on Jetson.
+
+### 📏 Evaluation Methodology
+All requests were issued using GuideLLM, with a consistent API schema for fair comparison.
+
+**Metrics:**
+- TTFT (Time To First Token)
+- TBT (Time Between Tokens)
+- Requests/s
+- Token Throughput
+- End-to-End Latency
+- Success Rate under concurrency
+
+**Workload design:**
+- Varying prompt lengths → TTFT
+- Varying output lengths → TBT
+- Increasing concurrency → throughput, stability
+- Server tests: 30-second runs
+- Edge tests: 240-second runs
+- All engines evaluated using default settings (no manual tuning)
+
+### 🔢 Quantized Model Results (Server)
+
+Evaluated primarily on Ollama, LLaMA.cpp, and MLC LLM with 4-bit models.
+
+**TTFT**
+- TTFT increases linearly with prompt length across engines.
+- LLaMA.cpp on H100 had competitive TTFT but occasionally unstable.
+- MLC LLM showed fast TTFT in some cases but poor overall reliability.
+
+**TBT**
+- H100 delivered 2× faster decoding than A6000.
+- For larger models (e.g., Qwen3-32B), several engines failed as output length increased.
+
+**Throughput Under Concurrency**
+- Small models → similar throughput across engines
+- Medium models → Ollama (H100) consistently highest and most stable
+- LLaMA.cpp → good decoding speed but high failure rate at concurrency ≥ 8
+
+**Token Throughput**
+Meta-Llama-3.1-8B:
+- Ollama (H100): ~588 tok/s
+- LLaMA.cpp (H100): ~431 tok/s
+
+**End-to-End Latency**
+
+Most engines converge around 15–17 seconds at concurrency 16.
+
+**Stability**
+- Medium/large models break down quickly at higher concurrency (1–10% success at ≥16).
+- MLC LLM becomes unusable beyond concurrency 4.
+
+### 💡 Full-Precision Model Results (Server)
+
+Focus on high-performance engines:
+TensorRT-LLM, vLLM, LMDeploy, TGI.
+
+**TTFT**
+- TensorRT-LLM consistently lowest TTFT.
+- vLLM, LMDeploy, TGI stable across all prompts/models.
+
+**TBT**
+- TensorRT-LLM fastest due to fused kernels and optimized attention.
+- Others show moderate, predictable scaling.
+
+**Requests/s (Llama-2-7B)**
+Concurrency 64:
+- TensorRT-LLM: 3.68 req/s
+- LMDeploy: 2.57 req/s
+- vLLM: 2.00 req/s
+- TGI: 2.37 req/s
+
+**Token Throughput**
+(Llama-2-7B, concurrency 64)
+- TensorRT-LLM: 7,535 tok/s
+- LMDeploy: 4,246 tok/s
+- vLLM: 4,107 tok/s
+- TGI: 3,058 tok/s
+
+Some models (e.g., Qwen2.5) favor LMDeploy or vLLM due to kernel specialization.
+
+**Latency & Stability**
+- TensorRT-LLM lowest latency, vLLM/LMDeploy/TGI close behind.
+- Most other engines failed to maintain concurrency stability.
+
+### 📱 Edge Device Results (Jetson Orin)
+
+Only Ollama and LLaMA.cpp passed all tests.
+
+**TTFT**
+
+Llama-3.1-8B:
+
+- Ollama is 2.5–3.5× faster than LLaMA.cpp
+
+Small models (<1B–2B):
+- LLaMA.cpp is faster
+
+8B+ models: TTFT grows to 30–40s → impractical.
+
+**TBT**
+- Small models → LLaMA.cpp wins
+- Medium models → Ollama wins
+- Differences smaller than TTFT gap
+
+**Throughput**
+
+8B models:
+- Ollama: ~0.15 req/s
+- LLaMA.cpp: ~0.05 req/s
+
+14B models:
+- ~0.07 req/s → not usable
+
+**Latency**
+Concurrency 4:
+- 8B models: 25–70s
+- 14B models: >130s
+
+Edge-viable range: 1B–4B models, concurrency 1–2
+
+### 🧭 Overall Findings
+**Server**
+
+- Top performance: TensorRT-LLM
+- Best all-rounders: vLLM, LMDeploy, TGI
+- Unstable under load: SGLang, LitGPT, DeepSpeed-FastGen (without tuning)
+- Large models still unstable under high concurrency on a single node
+
+**Edge**
+
+- 8B+ models not suitable
+- Practical range is 1B–4B models
+- Ollama better for interactive use
+- LLaMA.cpp better for small-model, high-locality workloads
+
+**Key Takeaways**
+
+- Engine performance varies significantly by model type, hardware, and concurrency.
+- Many engines fail silently at scale; stability is as important as raw throughput.
+- TensorRT-LLM dominates optimized full-precision inference, while vLLM/LMDeploy/TGI provide balanced performance without special builds.
+- Edge inference remains heavily constrained by memory and latency.
+
 
 
 ## 🔭 Future Directions
