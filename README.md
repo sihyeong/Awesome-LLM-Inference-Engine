@@ -471,6 +471,11 @@ Meta-Llama-3.1-8B:
 
 Most engines converge around 15–17 seconds at concurrency 16.
 
+<p align="center">
+  <img src="assets/quant_latency.png" alt="Quantized Model Request Latency" width="800">
+</p>
+
+
 **Stability**
 - Medium/large models break down quickly at higher concurrency (1–10% success at ≥16).
 - MLC LLM becomes unusable beyond concurrency 4.
@@ -508,6 +513,11 @@ Some models (e.g., Qwen2.5) favor LMDeploy or vLLM due to kernel specialization.
 - TensorRT-LLM lowest latency, vLLM/LMDeploy/TGI close behind.
 - Most other engines failed to maintain concurrency stability.
 
+<p align="center">
+  <img src="assets/latency.png" alt="Request Latency" width="800">
+</p>
+
+
 ### 📱 Edge Device Results (Jetson Orin)
 
 Only Ollama and LLaMA.cpp passed all tests.
@@ -543,6 +553,11 @@ Concurrency 4:
 - 14B models: >130s
 
 Edge-viable range: 1B–4B models, concurrency 1–2
+
+<p align="center">
+  <img src="assets/latency_edge.png" alt="Request Latency on Edge Device" width="800">
+</p>
+
 
 ### 🧭 Overall Findings
 **Server**
