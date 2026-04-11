@@ -52,6 +52,7 @@ We classify LLM inference engines along the following dimensions:
 - [bitnet.cpp](https://github.com/microsoft/BitNet)
 - [DeepSpeed-FastGen](https://github.com/deepspeedai/DeepSpeed/tree/master/blogs/deepspeed-fastgen) 🌐 [Webpage](https://www.deepspeed.ai/) 📄 [Paper](https://arxiv.org/abs/2401.08671)
 - [DistServe](https://github.com/LLMServe/DistServe) 📄 [Paper](https://arxiv.org/abs/2401.09670)
+- [EIE - Elyne Inference Engine](https://github.com/deharoalexandre-cyber/EIE)
 - [LightLLM](https://github.com/ModelTC/lightllm) 🌐 [Webpage](https://www.light-ai.top/lightllm-blog/blog/)
 - [LitGPT](https://github.com/Lightning-AI/litgpt) 🌐 [Webpage](https://lightning.ai/)
 - [LMDeploy](https://github.com/InternLM/lmdeploy) 🌐 [Webpage](https://lmdeploy.readthedocs.io/en/latest/)
