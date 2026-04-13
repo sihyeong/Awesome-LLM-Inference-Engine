@@ -808,10 +808,18 @@ MIT License. See `LICENSE` for details.
 ```
 
 ```
-@article{park2025survey,
-  title={A Survey on Inference Engines for Large Language Models: Perspectives on Optimization and Efficiency},
-  author={Park, Sihyeong and Jeon, Sungryeol and Lee, Chaelyn and Jeon, Seokhun and Kim, Byung-Soo and Lee, Jemin},
-  journal={arXiv preprint arXiv:2505.01658},
-  year={2025}
+@article{10.1145/3803798,
+author = {Park, Sihyeong and Jeon, Sungryeol and Lee, Chaelyn and Jeon, Seokhun and Kim, Byung-Soo and Lee, Jemin},
+title = {A Survey on Inference Engines for Large Language Models: Perspectives on Optimization and Efficiency},
+year = {2026},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {2157-6904},
+url = {https://doi.org/10.1145/3803798},
+doi = {10.1145/3803798},
+note = {Just Accepted},
+journal = {ACM Trans. Intell. Syst. Technol.},
+month = mar,
+keywords = {Large Language Model, Transformer, Inference Engine, Framework, Optimization}
 }
 ```
