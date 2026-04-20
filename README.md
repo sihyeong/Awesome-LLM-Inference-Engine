@@ -145,6 +145,8 @@ We classify LLM inference optimization techniques into several major categories 
 
 ### Quantization
 
+- [OneComp vLLM plugin](https://github.com/FujitsuResearch/OneCompression) — Official vLLM plugin (DBF, Mixed-GPTQ) for serving OneComp-quantized LLMs. [Paper](https://arxiv.org/abs/2603.28845).
+
 
 | Technique             | Description                                         | References                              |
 | ----------------------- | ----------------------------------------------------- | ----------------------------------------- |
