@@ -224,6 +224,7 @@ We classify LLM inference optimization techniques into several major categories 
 | EAGLE     | Multi-token speculative decoding               | [Li et al. (2024a)](https://arxiv.org/abs/2401.15077), [Li et al.  (2024b)](https://arxiv.org/abs/2406.16858), [Li et al.  (2025)](https://arxiv.org/abs/2503.01840) |
 | Medusa    | Tree-based multi-head decoding                 | [Cai et al. (2024)](https://arxiv.org/abs/2401.10774)             |
 | ReDrafter | Regenerates output based on long-range context | [Cheng et al. (2024)](https://arxiv.org/abs/2403.09919)            |
+| MineDraft | Batch parallel speculative decoding overlapping drafting and verification (vLLM plugin) | [Tang et al. (2026)](https://arxiv.org/abs/2603.18016) |
 
 ## 🧾 Structured Outputs
 
