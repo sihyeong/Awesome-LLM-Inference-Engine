@@ -17,7 +17,8 @@ Our work is based on the following paper:
 - [📊 Taxonomy](#taxonomy)
 - [🛠 Optimization Techniques](#optimization-techniques)
 - [🔓 Open Source Inference Engines](#open-source-inference-engines)
-- [💼 Commercial Solutions](#commercial-solutions)
+- [🧭 Open Source LLM Gateways and Serving Systems](#open-source-llm-gateways-and-serving-systems)
+- [💼 Commercial Inference Engines](#commercial-inference-engines)
 - [🧮 Comparison Table](#comparison-table)
 - [🔭 Future Directions](#future-directions)
 - [🤝 Contributing](#contributing)
@@ -73,6 +74,10 @@ We classify LLM inference engines along the following dimensions:
 - [vLLM](https://github.com/vllm-project/vllm) 🌐 [Webpage](https://docs.vllm.ai/en/latest/) 📄 [Paper](https://arxiv.org/abs/2309.06180)
 - PrefillOnly 📄 [Paper](https://arxiv.org/abs/2505.07203)
 - [Colossal-AI](https://github.com/hpcaitech/ColossalAI) 🌐 [Webpage](https://colossalai.org/)
+
+## 🧭 Open Source LLM Gateways and Serving Systems
+
+- [Ferro Labs AI Gateway](https://github.com/ferro-labs/ai-gateway)
 
 ## 💼 Commercial Inference Engines
 
@@ -790,7 +795,7 @@ This holistic view of optimization—across models, engines, hardware, and servi
 
 We welcome community contributions! Feel free to:
 
-- Add new inference engines or papers
+- Add new inference engines, serving gateways, or papers
 - Update benchmarks or hardware support
 - Submit PRs for engine usage examples or tutorials
 
