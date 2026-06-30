@@ -137,6 +137,8 @@ We classify LLM inference optimization techniques into several major categories 
 | Nano Batching       | Extremely fine-grained batching for ultra-low latency inference                                         | [Zhu et al. (2024)](https://arxiv.org/abs/2408.12757)                          |
 | Chunked-prefills    | Splits prefill into chunks for parallel decoding                                                        | [Agrawal et al. (2023)](https://arxiv.org/abs/2308.16369)                      |
 
+
+- [SuperCompress](https://github.com/arjunkshah/supercompress) - Learned prompt compression that reduces inference tokens by ~65%. ~5K-parameter CPU policy (~60ms latency) with 100% oracle recall. Pre-processes prompts before inference.
 ## 🕸 Parallelism
 
 
@@ -193,6 +195,8 @@ We classify LLM inference optimization techniques into several major categories 
 | Dynamic Token Sparsity | Prunes tokens based on dynamic importance | [Yang et al. (2024)](https://arxiv.org/abs/2408.07092), [Fu et al. (2024)](https://arxiv.org/abs/2407.14057)                                            |
 | Contextual Sparsity    | Applies sparsity based on context         | [Liu et al. (2023)](https://proceedings.mlr.press/v202/liu23am.html), [Akhauri et al. (2024)](https://arxiv.org/abs/2406.16635)                                        |
 
+
+- [SuperCompress](https://github.com/arjunkshah/supercompress) - Learned prompt compression that reduces inference tokens by ~65%. ~5K-parameter CPU policy (~60ms latency) with 100% oracle recall. Pre-processes prompts before inference.
 ## 🛠 Fine-Tuning
 
 
@@ -234,6 +238,8 @@ We classify LLM inference optimization techniques into several major categories 
 | ReDrafter | Regenerates output based on long-range context | [Cheng et al. (2024)](https://arxiv.org/abs/2403.09919)            |
 | MineDraft | Batch parallel speculative decoding overlapping drafting and verification (vLLM plugin) | [Tang et al. (2026)](https://arxiv.org/abs/2603.18016) |
 
+
+- [SuperCompress](https://github.com/arjunkshah/supercompress) - Learned prompt compression that reduces inference tokens by ~65%. ~5K-parameter CPU policy (~60ms latency) with 100% oracle recall. Pre-processes prompts before inference.
 ## 🧾 Structured Outputs
 
 
@@ -404,6 +410,8 @@ This radar chart compares 25 inference engines across six key dimensions: genera
 | Groq LPU | - | - | - | - |
 
 
+
+- [SuperCompress](https://github.com/arjunkshah/supercompress) - Learned prompt compression that reduces inference tokens by ~65%. ~5K-parameter CPU policy (~60ms latency) with 100% oracle recall. Pre-processes prompts before inference.
 ## 🔬 Experiments
 
 This section presents an empirical study of 21 open-source LLM inference engines across both server-class GPUs and edge devices.
