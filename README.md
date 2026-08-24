@@ -67,6 +67,7 @@ We classify LLM inference engines along the following dimensions:
 - [OpenLLM](https://github.com/bentoml/OpenLLM) 🌐 [Webpage](https://www.bentoml.com/)
 - [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer)
 - [Project Zero](https://github.com/shifulegend/project-zero) 📄 [Paper1](https://arxiv.org/abs/2312.12456), 📄 [Paper2](https://arxiv.org/abs/2406.06282)
+- [qwen3.8-27b-in-c](https://github.com/shyringo/qwen3.8-27b-in-c)
 - [Sarathi-Serve](https://github.com/microsoft/sarathi-serve) 📄 [Paper](https://arxiv.org/abs/2403.02310)
 - [SGLang](https://github.com/sgl-project/sglang) 🌐 [Webpage](https://docs.sglang.ai/) 📄 [Paper](https://arxiv.org/abs/2312.07104)
 - [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) 🌐 [Webpage](https://docs.nvidia.com/tensorrt-llm/index.html)
