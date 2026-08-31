@@ -90,7 +90,7 @@ We classify LLM inference engines along the following dimensions:
 - 🌐 [Together Inference](https://www.together.ai/)
 
 ## 📋 Overview of LLM Inference Engines
-The following table compares 25 open-source and commercial LLM inference engines along multiple dimensions including organization, release status, GitHub trends, documentation maturity, model support, and community presence.
+The following table compares 26 open-source and commercial LLM inference engines along multiple dimensions including organization, release status, GitHub trends, documentation maturity, model support, and community presence.
 
 | Framework | Organization | Release Date | Open Source | GitHub Stars | Docs | SNS | Forum | Meetup |
 |-----------|--------------|---------------|--------------|----------------|------|------|--------|--------|
@@ -115,6 +115,7 @@ The following table compares 25 open-source and commercial LLM inference engines
 | DistServe | Academic (PKU) | Jan. 2024 | ✅ | 0.5K | ❌ | ❌ | ❌ | ❌ |
 | vAttention | Big Tech (Microsoft) | May. 2024 | ✅ | 0.3K | ❌ | ❌ | ❌ | ❌ |
 | Sarathi-Serve | Big Tech (Microsoft) | Nov. 2023 | ✅ | 0.3K | ❌ | ❌ | ❌ | ❌ |
+| EIE | Startup (Elyne Corp) | Apr. 2026 | ✅ | 4 | 🟠 | ❌ | ❌ | ❌ |
 | Friendli Inference | Startup (FriendliAI Inc.) | Nov. 2023 | ❌ | -- | 🟡 | ❌ | ❌ | ✅ |
 | Fireworks AI | Startup (Fireworks AI Inc.) | Jul. 2023 | ❌ | -- | 🟡 | ✅ | ❌ | ❌ |
 | GroqCloud | Startup (Groq Inc.) | Feb. 2024 | ❌ | -- | ❌ | ✅ | ❌ | ✅ |
@@ -285,6 +286,7 @@ We classify LLM inference optimization techniques into several major categories 
 | DistServe         | ✅     | ❌      | ❌     | ❌      | ❌     | ❌                   | ✅                 | ❌                  | ❌               | ❌          | ❌            | ❌           | ❌             | ❌             | ❌                                        | ❌                      |
 | vAttention        | ✅     | ❌      | ❌     | ❌      | ✅     | ❌                   | ✅                 | ❌                  | ❌               | ❌          | ❌            | ❌           | ❌             | ❌             | ❌                                        | ❌                      |
 | Sarathi-Serve     | ✅     | ❌      | ❌     | ❌      | ❌     | ❌                   | ✅                 | ❌                  | ❌               | ❌          | ❌            | ❌           | ❌             | ❌             | ❌                                        | ❌                      |
+| EIE               | ✅     | ✅      | ✅     | ❌      | ✅     | ✅                   | ✅                 | ✅                  | ❌               | ❌          | ❌            | ❌           | ❌             | ❌             | ❌                                        | ❌                      |
 | Friendli Inference| ❌     | ❌      | ❌     | ✅      | ❌     | ❌                   | ✅                 | ❌                  | ❌               | ❌          | ❌            | ❌           | ❌             | ❌             | ❌                                        | ❌                      |
 | Fireworks AI      | ❌     | ❌      | ❌     | ✅      | ❌     | ❌                   | ✅                 | ❌                  | ❌               | ❌          | ✅            | ❌           | ❌             | ❌             | ❌                                        | ❌                      |
 | GroqCloud         | ❌     | ❌      | ❌     | ✅      | ❌     | ❌                   | ❌                 | ❌                  | ❌               | ❌          | ❌            | ❌           | ❌             | ❌             | ❌                                        | Groq LPU               |
@@ -305,7 +307,7 @@ We classify LLM inference optimization techniques into several major categories 
 
 |                        | 🧩 Heterogeneous Devices                                                                                                  | ⚙️ Homogeneous Devices                                                                                                   |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| 🖥 **Single-Node**      | llama.cpp, MAX, MLC LLM, Ollama, PowerInfer, TGI                                                                          | bitnet.cpp, LightLLM, llama2.c, NanoFlow, OpenLLM, Sarathi-Serve, Unsloth, vAttention, Friendli Inference                |
+| 🖥 **Single-Node**      | EIE, llama.cpp, MAX, MLC LLM, Ollama, PowerInfer, TGI                                                                     | bitnet.cpp, LightLLM, llama2.c, NanoFlow, OpenLLM, Sarathi-Serve, Unsloth, vAttention, Friendli Inference                |
 | 🖧 **Multi-Node**       | DeepSpeed-FastGen, LitGPT, LMDeploy, SGLang, vLLM, Fireworks AI, Together Inference                                       | DistServe, TensorRT-LLM, GroqCloud                                                                                       |
 
 *Legend:*
@@ -339,6 +341,7 @@ We classify LLM inference optimization techniques into several major categories 
 | DistServe              | ✅               | ✅                   | ❌             | ✅               | ❌               | ❌   | ✅                  | ✅                     | ❌           | ❌      | ❌       | ❌   | ❌             | ✅             | ✅         | ❌             | ✅          | ❌             | ❌             | ❌             | ❌             | ❌                     | ❌               |
 | vAttention             | ❌               | ✅                   | ❌             | ❌               | ✅               | ❌   | ✅                  | ✅                     | ✅           | ✅      | ✅       | ✅   | ❌             | ❌             | ✅         | ✅             | ✅          | ✅             | ❌             | ❌             | ❌             | ❌                     | ❌               |
 | Sarathi-Serve          | ❌               | ❌                   | ❌             | ✅               | ❌               | ❌   | ✅                  | ✅                     | ❌           | ❌      | ✅       | ❌   | ❌             | ✅             | ✅         | ✅             | ❌          | ✅             | ❌             | ❌             | ❌             | ❌                     | ❌               |
+| EIE                    | ❌               | ❌                   | ❌             | ❌               | ❌               | ❌   | ❌                  | ❌                     | ✅           | ❌      | ❌       | ❌   | ✅             | ✅             | ✅         | ❌             | ❌          | ✅             | ❌             | ❌             | ❌             | ❌                     | ❌               |
 | Friendli Inference     | -                | ✅                   | -              | -                | -                | -    | ✅                  | ✅                     | ✅           | -       | ✅       | ✅   | -              | -              | -          | -              | ❌          | -              | -              | ❌             | ✅             | ✅                     | ✅               |
 | Fireworks AI           | -                | ✅                   | -              | -                | -                | -    | -                   | -                      | ✅           | ✅      | ✅       | ✅   | ✅             | -              | ✅         | -              | ❌          | -              | -              | ❌             | ✅             | ✅                     | ✅               |
 | GroqCloud              | -                | -                    | -              | -                | ✅               | -    | ✅                  | ✅                     | ✅           | ✅      | ✅       | -    | -              | -              | -          | -              | ❌          | -              | -              | ❌             | ✅             | ✅                     | ✅               |
@@ -369,6 +372,7 @@ We classify LLM inference optimization techniques into several major categories 
 | DistServe           | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ❌   | ❌   | ❌     | ❌     | ❌     | ❌      |
 | vAttention          | ✅   | ✅   | ✅   | ❌   | ❌   | ✅   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
 | Sarathi-Serve       | ✅   | ✅   | ❌   | ❌   | ❌   | ✅   | ❌   | ❌   | ❌     | ❌     | ❌     | ❌      |
+| EIE                 | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
 | Friendli Inference  | ✅   | ✅   | ✅   | ❌   | ❌   | ✅   | ✅   | ✅   | ❌     | ❌     | ❌     | ❌      |
 | Fireworks AI        | ❌   | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ❌   | ❌     | ❌     | ❌     | ❌      |
 | GroqCloud           | ✅   | ✅   | ❌   | ❌   | ❌   | ❌   | ✅   | ❌   | ❌     | ❌     | ❌     | ❌      |
