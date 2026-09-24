@@ -68,6 +68,7 @@ We classify LLM inference engines along the following dimensions:
 - [OpenLLM](https://github.com/bentoml/OpenLLM) 🌐 [Webpage](https://www.bentoml.com/)
 - [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer)
 - [Project Zero](https://github.com/shifulegend/project-zero) 📄 [Paper1](https://arxiv.org/abs/2312.12456), 📄 [Paper2](https://arxiv.org/abs/2406.06282)
+- [Reflex](https://github.com/lateos-ai/reflex) - GGUF-native Rust & CUDA inference engine optimized for cold-start latency (process launch to first token), not sustained throughput; every kernel is AOT-compiled by `nvcc` at build time instead of JIT'd via NVRTC at runtime.
 - [Sarathi-Serve](https://github.com/microsoft/sarathi-serve) 📄 [Paper](https://arxiv.org/abs/2403.02310)
 - [SGLang](https://github.com/sgl-project/sglang) 🌐 [Webpage](https://docs.sglang.ai/) 📄 [Paper](https://arxiv.org/abs/2312.07104)
 - [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) 🌐 [Webpage](https://docs.nvidia.com/tensorrt-llm/index.html)
