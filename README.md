@@ -1,5 +1,7 @@
 # Awesome-LLM-Inference-Engine
 
+- [DeeWaanAI Serve](https://github.com/DeeWaanAI/deewaanai-serve) - Research MoE serving engine (MLX / Apple Silicon) measuring when hot-expert pinning beats llama.cpp on concurrency; streams >RAM models as a feasibility demo. AGPL-3.0.
+
 <p align="center">
   <img src="assets/banner.png" alt="Awesome-LLM-Inference-Engine-Banner" width="400">
 </p>
