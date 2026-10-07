@@ -63,6 +63,7 @@ We classify LLM inference engines along the following dimensions:
 - [LMDeploy](https://github.com/InternLM/lmdeploy) 🌐 [Webpage](https://lmdeploy.readthedocs.io/en/latest/)
 - [llama2.c](https://github.com/karpathy/llama2.c)
 - [llama.cpp](https://github.com/ggml-org/llama.cpp)
+- [llmash](https://github.com/omgitsbase/llmash) - Ollama-compatible server on a llama.cpp fork tuned for speculative decoding on NVIDIA GPUs: each draft round (verify, accept, MTP draft steps) runs as one CUDA graph, and the MTP head drafts through a 4-bit copy of the LM head's most frequent rows.
 - [MAX](https://github.com/modular/modular) 🌐 [Webpage](https://www.modular.com/max/solutions/ai-inference)
 - [MLC LLM](https://github.com/mlc-ai/mlc-llm) 🌐 [Webpage](https://llm.mlc.ai/)
 - [NanoFlow](https://github.com/efeslab/Nanoflow) 📄 [Paper](https://arxiv.org/abs/2408.12757)
