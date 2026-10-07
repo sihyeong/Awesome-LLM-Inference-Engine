@@ -50,6 +50,8 @@ We classify LLM inference engines along the following dimensions:
 
 ## 🔓 Open Source Inference Engines
 
+- [DeeWaanAI Serve](https://github.com/DeeWaanAI/deewaanai-serve) - Research MoE serving engine (MLX / Apple Silicon) measuring when hot-expert pinning beats llama.cpp on concurrency; streams >RAM models as a feasibility demo. AGPL-3.0.
+
 - [bitnet.cpp](https://github.com/microsoft/BitNet)
 - [deepseek-v4-flash-0731-in-c](https://github.com/shyringo/deepseek-v4-flash-0731-in-c)
 - [DeepSpeed-FastGen](https://github.com/deepspeedai/DeepSpeed/tree/master/blogs/deepspeed-fastgen) 🌐 [Webpage](https://www.deepspeed.ai/) 📄 [Paper](https://arxiv.org/abs/2401.08671)
