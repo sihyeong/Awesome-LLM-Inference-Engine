@@ -87,6 +87,7 @@ We classify LLM inference engines along the following dimensions:
 
 - [Ferro Labs AI Gateway](https://github.com/ferro-labs/ai-gateway)
 - [KV Cache Store](https://kvcachestore.com/) - Hosted KV-cache artifact registry and open-source Rust CLI for precomputing, quantizing, verifying, and sharing attention-state artifacts across self-hosted LLM inference. ([CLI source](https://github.com/kvcachestore/kvcdn))
+- [OpenPhalanx](https://github.com/chophilip21/openPhalanx) - Self-hosted SGLang serving for a local coding agent: estimates which models fit the GPU (weights plus KV cache), splits a model too big for one card across several machines on a LAN, and serves paired laptops over certificate-pinned TLS. GPL-3.0.
 
 ## 💼 Commercial Inference Engines
 
