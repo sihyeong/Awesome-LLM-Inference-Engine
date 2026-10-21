@@ -87,6 +87,7 @@ We classify LLM inference engines along the following dimensions:
 
 - [Ferro Labs AI Gateway](https://github.com/ferro-labs/ai-gateway)
 - [KV Cache Store](https://kvcachestore.com/) - Hosted KV-cache artifact registry and open-source Rust CLI for precomputing, quantizing, verifying, and sharing attention-state artifacts across self-hosted LLM inference. ([CLI source](https://github.com/kvcachestore/kvcdn))
+- [Narwhal](https://github.com/athrael-soju/Narwhal) 🌐 [Webpage](https://athrael-soju.github.io/Narwhal/) - Disaggregated prefill/decode serving over vLLM engines. A role controller moves engines between prefill and decode as demand changes, with weights kept loaded and KV transferred over NIXL. Scheduling derives from [Arrow](https://arxiv.org/abs/2505.11916). Apache-2.0.
 
 ## 💼 Commercial Inference Engines
 
