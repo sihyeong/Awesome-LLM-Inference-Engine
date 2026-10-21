@@ -69,11 +69,13 @@ We classify LLM inference engines along the following dimensions:
 - [NanoFlow](https://github.com/efeslab/Nanoflow) 📄 [Paper](https://arxiv.org/abs/2408.12757)
 - [Ollama](https://github.com/ollama/ollama) 🌐 [Webpage](https://ollama.com/)
 - [OpenLLM](https://github.com/bentoml/OpenLLM) 🌐 [Webpage](https://www.bentoml.com/)
+- [PolyStrata](https://github.com/VecSzn/PolyStrata) - Strata with a second CUDA engine for more MoE models from their GGUFs (GLM 5.3 Flash, Qwen3.6-35B-A3B, Ornith 1.5, Gemma 4 26B-A4B): the card caches the experts an answer uses most, the CPU computes the others from the mapped file, and guessed tokens are verified a window at a time; Qwen3.6-35B-A3B writes 73-75 tok/s on a laptop with an 8 GB card
 - [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer)
 - [Project Zero](https://github.com/shifulegend/project-zero) 📄 [Paper1](https://arxiv.org/abs/2312.12456), 📄 [Paper2](https://arxiv.org/abs/2406.06282)
 - [Reflex](https://github.com/lateos-ai/reflex) - GGUF-native Rust & CUDA inference engine optimized for cold-start latency (process launch to first token), not sustained throughput; every kernel is AOT-compiled by `nvcc` at build time instead of JIT'd via NVRTC at runtime.
 - [Sarathi-Serve](https://github.com/microsoft/sarathi-serve) 📄 [Paper](https://arxiv.org/abs/2403.02310)
 - [SGLang](https://github.com/sgl-project/sglang) 🌐 [Webpage](https://docs.sglang.ai/) 📄 [Paper](https://arxiv.org/abs/2312.07104)
+- [Strata](https://github.com/Niko1221/Strata) - Qwen3.8-Flash-Next on consumer hardware: one-click install for Windows and Linux, OpenAI/Anthropic API on localhost, optional image input
 - [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) 🌐 [Webpage](https://docs.nvidia.com/tensorrt-llm/index.html)
 - [TGI (Text Generation Inference)](https://github.com/huggingface/text-generation-inference) 🌐 [Webpage](https://huggingface.co/docs/text-generation-inference/index)
 - [Unsloth](https://github.com/unslothai/unsloth) 🌐 [Webpage](https://unsloth.ai/)
