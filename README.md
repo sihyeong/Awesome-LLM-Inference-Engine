@@ -166,6 +166,7 @@ We classify LLM inference optimization techniques into several major categories 
 ### Quantization
 
 - [OneComp vLLM plugin](https://github.com/FujitsuResearch/OneCompression) — Official vLLM plugin (DBF, Mixed-GPTQ) for serving OneComp-quantized LLMs. [Paper](https://arxiv.org/abs/2603.28845).
+- [Pingala-8](https://github.com/Genrius-AI/pingala8-llm) - 2-bit weight format for llama.cpp (patched build, CUDA): 8-state trellis-coded quantization over 4-weight groups with Hadamard rotation and LDLQ rounding, post-training. [Paper](https://doi.org/10.5281/zenodo.23481757).
 
 
 | Technique             | Description                                         | References                              |
