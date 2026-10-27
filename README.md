@@ -67,6 +67,7 @@ We classify LLM inference engines along the following dimensions:
 - [MAX](https://github.com/modular/modular) 🌐 [Webpage](https://www.modular.com/max/solutions/ai-inference)
 - [MLC LLM](https://github.com/mlc-ai/mlc-llm) 🌐 [Webpage](https://llm.mlc.ai/)
 - [NanoFlow](https://github.com/efeslab/Nanoflow) 📄 [Paper](https://arxiv.org/abs/2408.12757)
+- [NobodyWho](https://github.com/nobodywho-ooo/nobodywho) 🌐 [Webpage](https://www.nobodywho.ai/) - On-device inference engine built on llama.cpp (Rust core) that embeds in apps and games, with bindings for Godot, Flutter, React Native, Swift, Kotlin and Python; grammar-constrained tool calling, plus Whisper speech-to-text and local TTS.
 - [Ollama](https://github.com/ollama/ollama) 🌐 [Webpage](https://ollama.com/)
 - [OpenLLM](https://github.com/bentoml/OpenLLM) 🌐 [Webpage](https://www.bentoml.com/)
 - [PolyStrata](https://github.com/VecSzn/PolyStrata) - Strata with a second CUDA engine for more MoE models from their GGUFs (GLM 5.3 Flash, Qwen3.6-35B-A3B, Ornith 1.5, Gemma 4 26B-A4B): the card caches the experts an answer uses most, the CPU computes the others from the mapped file, and guessed tokens are verified a window at a time; Qwen3.6-35B-A3B writes 73-75 tok/s on a laptop with an 8 GB card
