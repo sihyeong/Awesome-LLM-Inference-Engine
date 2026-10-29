@@ -57,6 +57,7 @@ We classify LLM inference engines along the following dimensions:
 - [DeepSpeed-FastGen](https://github.com/deepspeedai/DeepSpeed/tree/master/blogs/deepspeed-fastgen) 🌐 [Webpage](https://www.deepspeed.ai/) 📄 [Paper](https://arxiv.org/abs/2401.08671)
 - [DistServe](https://github.com/LLMServe/DistServe) 📄 [Paper](https://arxiv.org/abs/2401.09670)
 - [EIE - Elyne Inference Engine](https://github.com/deharoalexandre-cyber/EIE)
+- [Espetero](https://github.com/JarJarFran/espetero) - LLM inference server for Apple silicon written from scratch in C++20 and Metal (no Python, not built on MLX or llama.cpp): loads MLX and GGUF models, serves OpenAI, Anthropic and Ollama APIs, runs every step as one GPU pass for all requests in flight over a paged, prefix-shared KV cache, with MTP speculative decoding, JSON Schema grammars and MoE experts read from the SSD
 - [Higgs](https://github.com/panbanda/higgs)
 - [LightLLM](https://github.com/ModelTC/lightllm) 🌐 [Webpage](https://www.light-ai.top/lightllm-blog/blog/)
 - [LitGPT](https://github.com/Lightning-AI/litgpt) 🌐 [Webpage](https://lightning.ai/)
