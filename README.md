@@ -848,14 +848,19 @@ MIT License. See `LICENSE` for details.
 author = {Park, Sihyeong and Jeon, Sungryeol and Lee, Chaelyn and Jeon, Seokhun and Kim, Byung-Soo and Lee, Jemin},
 title = {A Survey on Inference Engines for Large Language Models: Perspectives on Optimization and Efficiency},
 year = {2026},
+issue_date = {February 2027},
 publisher = {Association for Computing Machinery},
 address = {New York, NY, USA},
+volume = {18},
+number = {1},
 issn = {2157-6904},
 url = {https://doi.org/10.1145/3803798},
 doi = {10.1145/3803798},
-note = {Just Accepted},
+abstract = {Large Language Models (LLMs) are widely applied in chatbots, code generators, and search engines. Workload such as chain-of-thought, complex reasoning, and agent services significantly increase inference cost by invoking the model repeatedly. Optimization methods such as parallelism, compression, and caching have been adopted to reduce costs, but the diverse service requirements make it hard to select the right method. Recently, specialized LLM inference engines have emerged as a key component for integrating the optimization methods into service-oriented infrastructures. However, a systematic study on inference engines is still lacking. This article provides a comprehensive evaluation of 25 open source and commercial inference engines. We analyze each inference engine in terms of ease-of-use, ease-of-deployment, general-purpose support, scalability, and suitability for throughput- and latency-aware computation. Furthermore, we explore the design goals of each inference engine by investigating the optimization techniques it supports. In addition, we assess the ecosystem maturity of open source inference engines and handle the performance and cost policy of commercial solutions. We outline future research directions that include support for complex LLM-based services, support of various hardware, and enhanced security, offering practical guidance to researchers and developers in selecting and designing optimized LLM inference engines. We also provide a public repository to continually track developments in this fast-evolving field: .},
 journal = {ACM Trans. Intell. Syst. Technol.},
-month = mar,
+month = oct,
+articleno = {14},
+numpages = {111},
 keywords = {Large Language Model, Transformer, Inference Engine, Framework, Optimization}
 }
 ```
