@@ -59,6 +59,7 @@ We classify LLM inference engines along the following dimensions:
 - [EIE - Elyne Inference Engine](https://github.com/deharoalexandre-cyber/EIE)
 - [Espetero](https://github.com/JarJarFran/espetero) - LLM inference server for Apple silicon written from scratch in C++20 and Metal (no Python, not built on MLX or llama.cpp): loads MLX and GGUF models, serves OpenAI, Anthropic and Ollama APIs, runs every step as one GPU pass for all requests in flight over a paged, prefix-shared KV cache, with MTP speculative decoding, JSON Schema grammars and MoE experts read from the SSD
 - [Higgs](https://github.com/panbanda/higgs)
+- [Kapitsa](https://github.com/nace-ai/kapitsa) - Native C++ LLM inference engine for Apple silicon on hand-written Metal kernels plus the Neural Engine (no MLX or llama.cpp runtime); serves OpenAI- and Anthropic-compatible APIs and decodes with KFlash, speculative decoding that verifies a best-first tree of a draft model's candidates with output the same as plain decoding
 - [LightLLM](https://github.com/ModelTC/lightllm) 🌐 [Webpage](https://www.light-ai.top/lightllm-blog/blog/)
 - [LitGPT](https://github.com/Lightning-AI/litgpt) 🌐 [Webpage](https://lightning.ai/)
 - [LMDeploy](https://github.com/InternLM/lmdeploy) 🌐 [Webpage](https://lmdeploy.readthedocs.io/en/latest/)
