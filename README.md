@@ -81,7 +81,7 @@ We classify LLM inference engines along the following dimensions:
 - [Strata](https://github.com/Niko1221/Strata) - Qwen3.8-Flash-Next on consumer hardware: one-click install for Windows and Linux, OpenAI/Anthropic API on localhost, optional image input
 - [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM) 🌐 [Webpage](https://docs.nvidia.com/tensorrt-llm/index.html)
 - [TGI (Text Generation Inference)](https://github.com/huggingface/text-generation-inference) 🌐 [Webpage](https://huggingface.co/docs/text-generation-inference/index)
-- [TurboFieldfare](https://github.com/drumih/turbo-fieldfare) - Custom inference engine for running Gemma 4 26B-A4B on Apple Silicon Macs, even 8 GB ones. Written in Swift and Metal, it streams expert weights from SSD and includes a local OpenAI-compatible server, CLI and native Mac app.
+- [TurboFieldfare](https://github.com/drumih/turbo-fieldfare) - Custom inference engine running Gemma 4 26B-A4B on Apple Silicon Macs, even 8 GB ones, using SSD weight streaming.
 - [Unsloth](https://github.com/unslothai/unsloth) 🌐 [Webpage](https://unsloth.ai/)
 - [vAttention](https://github.com/microsoft/vattention) 📄 [Paper](https://arxiv.org/abs/2405.04437)
 - [vLLM](https://github.com/vllm-project/vllm) 🌐 [Webpage](https://docs.vllm.ai/en/latest/) 📄 [Paper](https://arxiv.org/abs/2309.06180)
