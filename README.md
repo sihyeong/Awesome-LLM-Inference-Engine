@@ -69,6 +69,7 @@ We classify LLM inference engines along the following dimensions:
 - [MAX](https://github.com/modular/modular) 🌐 [Webpage](https://www.modular.com/max/solutions/ai-inference)
 - [MLC LLM](https://github.com/mlc-ai/mlc-llm) 🌐 [Webpage](https://llm.mlc.ai/)
 - [NanoFlow](https://github.com/efeslab/Nanoflow) 📄 [Paper](https://arxiv.org/abs/2408.12757)
+- [NeuroBrix](https://github.com/NeuroBrix/neurobrix) 🌐 [Webpage](https://neurobrix.org/) - One engine and one container format for language, speech, image and video models; a PyTorch engine and a Triton engine with kernels certified per GPU class, no PyTorch required.
 - [NobodyWho](https://github.com/nobodywho-ooo/nobodywho) 🌐 [Webpage](https://www.nobodywho.ai/) - On-device inference engine built on llama.cpp (Rust core) that embeds in apps and games, with bindings for Godot, Flutter, React Native, Swift, Kotlin and Python; grammar-constrained tool calling, plus Whisper speech-to-text and local TTS.
 - [Ollama](https://github.com/ollama/ollama) 🌐 [Webpage](https://ollama.com/)
 - [OpenLLM](https://github.com/bentoml/OpenLLM) 🌐 [Webpage](https://www.bentoml.com/)
