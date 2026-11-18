@@ -77,6 +77,7 @@ We classify LLM inference engines along the following dimensions:
 - [PowerInfer](https://github.com/SJTU-IPADS/PowerInfer)
 - [Project Zero](https://github.com/shifulegend/project-zero) 📄 [Paper1](https://arxiv.org/abs/2312.12456), 📄 [Paper2](https://arxiv.org/abs/2406.06282)
 - [raceline](https://github.com/audenvenn/raceline) - Local agent runtime and inference engine for Apple silicon, for Qwen3.5 / Qwen3.8: C++ and Metal 4 kernels on the GPU's neural accelerators (MLX is an optional backend, not a requirement), native 4-bit FP4 weights, and exact speculative decoding from the model's own MTP head (up to seven drafts per pass, output bit-identical to plain decoding, also when sampling); OpenAI-compatible server and a terminal agent
+- [RAI](https://github.com/Classevelabs/rai) 🌐 [Webpage](https://classeve.com/public/rai) - CPU-only LLM inference engine in Rust: 4-bit models on hand-written AVX2 kernels, one-step installers for Windows, macOS and Linux, and a local chat UI and API, with no GPU or Python.
 - [Reflex](https://github.com/lateos-ai/reflex) - GGUF-native Rust & CUDA inference engine optimized for cold-start latency (process launch to first token), not sustained throughput; every kernel is AOT-compiled by `nvcc` at build time instead of JIT'd via NVRTC at runtime.
 - [Sarathi-Serve](https://github.com/microsoft/sarathi-serve) 📄 [Paper](https://arxiv.org/abs/2403.02310)
 - [SGLang](https://github.com/sgl-project/sglang) 🌐 [Webpage](https://docs.sglang.ai/) 📄 [Paper](https://arxiv.org/abs/2312.07104)
