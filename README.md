@@ -183,7 +183,7 @@ We classify LLM inference optimization techniques into several major categories 
 | QAT                   | Retrains with quantization awareness                | [Chen et al. (2024)](https://arxiv.org/abs/2407.11062), [Liu et al. (2023)](https://arxiv.org/abs/2305.17888)   |
 | AQLM                  | Maintains performance at extremely low precision    | [Egiazarian et al. (2024)](https://arxiv.org/abs/2401.06118)                |
 | SmoothQuant           | Uses scale folding for normalization                | [Xiao et al. (2023)](https://proceedings.mlr.press/v202/xiao23c.html)                      |
-| KV Cache Quantization | Quantizes KV cache to reduce memory usage           | [Hooper et al. (2024)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/028fcbcf85435d39a40c4d61b42c99a4-Abstract-Conference.html), [Liu et al. (2024)](https://arxiv.org/abs/2402.02750) |
+| KV Cache Quantization | Quantizes KV cache to reduce memory usage           | [Hooper et al. (2024)](https://proceedings.neurips.cc/paper_files/paper/2024/hash/028fcbcf85435d39a40c4d61b42c99a4-Abstract-Conference.html), [Liu et al. (2024)](https://arxiv.org/abs/2402.02750), [Ali et al. (2026)](https://doi.org/10.5281/zenodo.24457433) |
 | EXL2                  | Implements efficient quantization format            | [EXL2](https://github.com/turboderp-org/exllamav2)                          |
 | EETQ                  | Inference-friendly quantization method              | [EETQ](https://github.com/NetEase-FuXi/EETQ)                           |
 | LLM Compressor        | Unified framework for quantization and pruning      | [LLM Compressor](https://github.com/vllm-project/llm-compressor)                    |
@@ -235,6 +235,7 @@ We classify LLM inference optimization techniques into several major categories 
 | Prompt Caching | Caches responses to identical prompts | [Zhu et al. (2024)](https://arxiv.org/abs/2402.01173)                    |
 | Prefix Caching | Reuses common prefix computations     | [Liu et al. (2024)](https://arxiv.org/abs/2403.05821), [Pan et al. (2024)](https://arxiv.org/abs/2411.19379) |
 | KV Caching     | Stores KV pairs for reuse in decoding | [Pope et al. (2023)](https://proceedings.mlsys.org/paper_files/paper/2023/hash/c4be71ab8d24cdfb45e3d06dbfca2780-Abstract-mlsys2023.html)                   |
+| Hierarchical / host-memory KV cache | Keeps evicted KV pages in host DRAM for later reuse | [Ali et al. (2026)](https://doi.org/10.5281/zenodo.24457433) |
 
 ## 🔍 Attention Optimization
 
